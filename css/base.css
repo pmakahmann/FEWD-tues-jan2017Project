@@ -26,10 +26,13 @@ h3 {
 	margin-top: 0;
 }
 
-p{
+p,
+span {
 	font-family: 'Heebo', sans-serif;
 	font-size: 1em;
 }
+/*all paragraphs and spans will have same font.  Using spans for
+the "Reveal" feature in .test1questions on Test 1 page*/
 
 
 
@@ -56,45 +59,55 @@ p{
 	padding: 10px 15px;
 }
 
+.main-header,
+.main-footer {
+	background: linear-gradient(darkgreen, transparent 90%),
+							linear-gradient(0deg, #00b300, transparent),
+							darkgreen;
+}
+
+/*creates the green gradient on header and footer to make site
+more visally appealing.  Originally started with solid darkgreen
+color, and it looked like a bad 90's website.*/
+
 .main-header {
 	font-family: 'Bungee Shade', cursive;
-	background-color: darkgreen;
 }
 
 .main-nav a {
 	font-family: 'Orbitron', sans-serif;
 }
 
-.main-nav a:hover {
+.main-header a:hover {
 	color: black;
 }
 
 .main-footer {
-	background: darkgreen;
 	padding: 1.5em 1em;
-	margin-top: 30px;
+	margin-top: auto;
 	font-size: 1.2em;
-}
-
-.main-footer {
 	text-align: center;
+	color: white;
 }
 
-.main-text {
+.main-text,
+.test1questions {
 	display: block;
 	text-align: center;
-	padding: 20px;
+	padding: 10% 20%;
 }
+
+/*added .test1questions to center the questions on Test 1 page without
+having it as a .main-text.  There's probably a better way to do this.
+I need to check it out later*/
 
 /* =================================
   Media Queries
 ==================================== */
 
 @media (min-width: 769px) {
-	main-header,
-	footer-inner {
-		width: 80%;
-		margin: 0 auto;
-		max-width: 1150px;
+
+	.main-text {
+		padding-top: 20%;
 	}
 }
