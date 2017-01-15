@@ -22,16 +22,26 @@
     <!--add links for additional pages once they are created.  Create logical names for pages-->
   </header><!--/.main-header-->
 
-  <div class="main-text">
-    <p>
-      This website is a project designed to display my ability as a front-end web designer.
-    </p>
-    <p>
-      The links above will take you to various motor-control equations, used by many engineers and electricians in their daily work.  These calculations are critical for the proper operation of motors used in residentail, commerical, and industrial applications every day.
-    </p>
-      <!--insert main text here about the links and what all the equations are, possibly including an ordered list of the calculations-->
-    </p>
-  </div><!--/.main-text-->
+  <p>
+    The basic equation for Ohms' Law is V=IR, or Voltage = Current * Resistance.<br>
+    From this, you can derive the equation for Resistance as:<br>
+    Resistance = Voltage / Current
+  </p>
+
+  <div>
+    <form>
+      Voltage:<br>
+      <input type="number" name="voltage"><br>
+      Current (amp):<br>
+      <input type="number" name="current"><br>
+      <input type="submit" value="Calculate"><br>
+      Resistance:<br>
+      <input type="text" name="resistance">
+    </form>
+  </div>
+<!-- Need to center on page and format number boxes to remove arrows
+Also, figure out how to perform the calculations with jQuery or JavaScript,
+but this can be done later -->
 
   <footer class="main-footer">
     <div class="footer-inner">
