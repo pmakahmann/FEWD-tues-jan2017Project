@@ -14,6 +14,7 @@ ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	/*no bullet points in list*/
 }
 
 h1 {
@@ -29,6 +30,7 @@ h3 {
 p,
 span {
 	font-family: 'Heebo', sans-serif;
+	/*Font chosen for "throwback" visuals*/
 	font-size: 1em;
 }
 /*all paragraphs and spans will have same font.  Using spans for
@@ -72,6 +74,9 @@ color, and it looked like a bad 90's website.*/
 
 .main-header {
 	font-family: 'Bungee Shade', cursive;
+	/*using .main-header class instead of .name class because it loads
+	faster in the browser.  When .name is used, the default browser
+	font can be seen momentarily.  Not sure why exactly*/
 }
 
 .main-nav a {
@@ -95,6 +100,12 @@ color, and it looked like a bad 90's website.*/
 	display: block;
 	text-align: center;
 	padding: 10% 20%;
+}
+
+.questionBody {
+	margin: auto;
+/*keeps the questions from scrolling on larger screens and separate
+from main-text class*/
 }
 
 /*added .test1questions to center the questions on Test 1 page without

@@ -6,6 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  /*creates sticky footer*/
 }
 
 /* =================================
@@ -27,5 +28,6 @@ body {
   .main-header{
     flex-direction: row;
     justify-content: space-between;
+    /*allows separation between .name and .main-nav*/
   }
 }
