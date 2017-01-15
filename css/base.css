@@ -40,28 +40,33 @@ p{
 
 /* ---- Navigation ---- */
 
-.main-header,
-.main-nav {
-	background-color: darkgreen;
-	text-align: center;
-	display: block;
+.name {
+		font-size: 1.35em;
 }
 
-.main-header a,
+.main-nav {
+	margin-top: 5px;
+}
+
+.name a,
 .main-nav a {
 	color: white;
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
 }
 
 .main-header {
 	font-family: 'Bungee Shade', cursive;
+	background-color: darkgreen;
 }
 
-.main-nav {
+.main-nav a {
 	font-family: 'Orbitron', sans-serif;
 }
 
-.main-nav li{
-	padding: 10px;
+.main-nav a:hover {
+	color: black;
 }
 
 .main-footer {
@@ -87,17 +92,6 @@ p{
   Flex
 ==================================== */
 
-.main-nav{
-	display: inline-flex;
-	flex-wrap: wrap;
-}
-
-
-
 /* =================================
   Media Queries
 ==================================== */
-
-@media (min-width: 769px) {
-
-}
