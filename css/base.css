@@ -1,0 +1,103 @@
+/* =================================
+  Base Element Styles
+====================================*/
+
+*{
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+h1,
+h2,
+h3 {
+	margin-top: 0;
+}
+
+p{
+	font-family: 'Heebo', sans-serif;
+	font-size: 1em;
+}
+
+
+
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.main-header,
+.main-nav {
+	background-color: darkgreen;
+	text-align: center;
+	display: block;
+}
+
+.main-header a,
+.main-nav a {
+	color: white;
+}
+
+.main-header {
+	font-family: 'Bungee Shade', cursive;
+}
+
+.main-nav {
+	font-family: 'Orbitron', sans-serif;
+}
+
+.main-nav li{
+	padding: 10px;
+}
+
+.main-footer {
+	background: darkgreen;
+	padding: 1.5em 1em;
+	margin-top: 30px;
+	font-size: 1.2em;
+}
+
+.main-footer {
+	text-align: center;
+}
+
+.main-text {
+	display: block;
+	text-align: center;
+	padding: 20px;
+}
+
+/*make footer sticky*/
+
+/* =================================
+  Flex
+==================================== */
+
+.main-nav{
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+}
