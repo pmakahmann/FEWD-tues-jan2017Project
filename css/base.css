@@ -102,6 +102,12 @@ color, and it looked like a bad 90's website.*/
 	padding: 10% 20%;
 }
 
+.questionBody {
+	margin: auto;
+/*keeps the questions from scrolling on larger screens and separate
+from main-text class*/
+}
+
 /*added .test1questions to center the questions on Test 1 page without
 having it as a .main-text.  There's probably a better way to do this.
 I need to check it out later*/
