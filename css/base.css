@@ -86,12 +86,15 @@ p{
 	padding: 20px;
 }
 
-/*make footer sticky*/
-
-/* =================================
-  Flex
-==================================== */
-
 /* =================================
   Media Queries
 ==================================== */
+
+@media (min-width: 769px) {
+	main-header,
+	footer-inner {
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+}
