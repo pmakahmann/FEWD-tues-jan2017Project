@@ -83,7 +83,7 @@ p{
 .main-text {
 	display: block;
 	text-align: center;
-	padding: 20px;
+	padding: 10% 20%;
 }
 
 /* =================================
@@ -91,10 +91,8 @@ p{
 ==================================== */
 
 @media (min-width: 769px) {
-	main-header,
-	footer-inner {
-		width: 80%;
-		margin: 0 auto;
-		max-width: 1150px;
+
+	.main-text {
+		padding-top: 20%;
 	}
 }
