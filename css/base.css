@@ -49,9 +49,7 @@ the "Reveal" feature in .test1questions on Test 1 page*/
 		font-size: 1.35em;
 }
 
-.main-nav {
-	margin-top: 5px;
-}
+
 
 .name a,
 .main-nav a {
@@ -64,7 +62,7 @@ the "Reveal" feature in .test1questions on Test 1 page*/
 .main-header,
 .main-footer {
 	background: linear-gradient(darkgreen, transparent 90%),
-							linear-gradient(0deg, #00b300, transparent),
+							linear-gradient(270deg, #00b300, transparent),
 							darkgreen;
 }
 
@@ -81,6 +79,11 @@ color, and it looked like a bad 90's website.*/
 
 .main-nav a {
 	font-family: 'Orbitron', sans-serif;
+}
+
+.selected {
+	border-style: inset;
+	border-color: black;
 }
 
 .main-header a:hover {
