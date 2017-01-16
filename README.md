@@ -7,7 +7,7 @@ The fonts and colors are meant to be a throw back to the older "Green Screen" Ap
 
 The end goal is to complete the code for the calculator, include other pages for testing and calculations, and eventually create a free app for iOS and Android so that people can use the calculators and test on the go.
 
-This project is currently unfinished.  The calculator code is not yet written and more pages beyond Resistance and Test 1 need to be created.Pages 3-5 are not yet existent and the links are dead.
+This project is currently unfinished.  The calculator code for the Resistance link is not yet functional.  Pages 3-5 are currently void of content, but the links are active and the pages are styled.
 
 To view the project, simply clone or download the project files and open the index.html.
 
