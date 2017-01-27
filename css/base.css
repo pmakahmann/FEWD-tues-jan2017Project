@@ -36,7 +36,9 @@ span {
 /*all paragraphs and spans will have same font.  Using spans for
 the "Reveal" feature in .test1questions on Test 1 page*/
 
-
+input {
+	margin: 5px auto;
+}
 
 
 /* =================================
@@ -99,14 +101,15 @@ color, and it looked like a bad 90's website.*/
 }
 
 .main-text,
-.test1questions {
+.test1questions,
+.calculation {
 	display: block;
 	text-align: center;
-	padding: 10% 20%;
+	padding: 20px 20%;
 }
 
 .questionBody {
-	margin: auto;
+	margin: 0 20%;
 /*keeps the questions from scrolling on larger screens and separate
 from main-text class*/
 }
@@ -115,6 +118,13 @@ from main-text class*/
 having it as a .main-text.  There's probably a better way to do this.
 I need to check it out later*/
 
+.submit {
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: red;
+	color: white;
+	box-shadow: 0 5px 5px black;
+}
 /* =================================
   Media Queries
 ==================================== */
@@ -122,6 +132,6 @@ I need to check it out later*/
 @media (min-width: 769px) {
 
 	.main-text {
-		padding-top: 20%;
+		padding-top: 5%;
 	}
 }
