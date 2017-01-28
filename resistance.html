@@ -10,38 +10,46 @@
 <body>
 
   <header class="main-header">
-    <h1 class="name"><a href="index.html">Motor Control Calculations</a>
+    <h1 class="name"><a href="index.html">Ohm's Law: I=V/R</a>
     </h1>
     <ul class="main-nav">
 		<li class="selected"><a href="resistance.html">Resistance</a></li>
 		<li><a href="test1.html">Test 1</a></li>
-		<li><a href="page3.html">Page 3</a></li>
-		<li><a href="page4.html">Page 4</a></li>
-		<li><a href="page5.html">Page 5</a></li>
+		<li><a href="voltage.html">Voltage</a></li>
+		<li><a href="test2.html">Test 2</a></li>
+		<li><a href="current.html">Current</a></li>
 	</ul>
     <!--add links for additional pages once they are created.  Create logical names for pages-->
   </header><!--/.main-header-->
 
   <p class="main-text">
-    The basic equation for Ohm's Law is V=IR, or Voltage = Current * Resistance.<br>
+    The basic equation for Ohm's Law is I=V/R, or Current = Voltage / Resistance.<br>
     From this, you can derive the equation for Resistance as:<br>
-    Resistance = Voltage / Current
+    Resistance = Voltage / Current (or R=V/I)<br>
+    And you can derive the equation for Voltage as:<br>
+    Voltage = Current * Resistance (or V=IR)<br>
+    Input any two variables below and press the red buton to calculate the third variable
   </p>
 
-  <div class="calculation">
+  <div class="calculation" name="resistanceForm">
     <form>
       Voltage:<br>
-      <input type="number" name="voltage"><br>
+      <input type="text" name="voltage" id="voltage"><br>
       Current (amp):<br>
-      <input type="number" name="current"><br>
-      <input type="submit" value="Calculate" class="submit"><br>
+      <input type="text" name="current" id="current"><br>
       Resistance:<br>
-      <input type="text" name="resistance">
+      <input type="text" name="resistance" id="resistance"><br>
+      <input type="submit" value="Resistance(R)" class="submit" onclick="calcResistance(); return false">
+      <input type="submit" value="Voltage(V)" class="submit" onclick="calcVoltage(); return false">
+      <input type="submit" value="Current(I)" class="submit" onclick="calcCurrent(); return false">
+
+      <!-- onclick return false keeps the form from submitting and returns the result of the equation to the page without disappearing -->
     </form>
   </div>
-<!-- Need to center on page and format number boxes to remove arrows
-Also, figure out how to perform the calculations with jQuery or JavaScript,
-but this can be done later -->
+
+  <div class="main-text">
+    <span id="returnCalculation"></span>
+  </div>
 
   <footer class="main-footer">
     <div class="footer-inner">
@@ -51,5 +59,6 @@ but this can be done later -->
     </div>
   </footer>
 
+  	<script src="js\resistance.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

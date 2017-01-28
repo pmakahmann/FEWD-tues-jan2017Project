@@ -14,16 +14,31 @@
     <ul class="main-nav">
 		<li><a href="resistance.html">Resistance</a></li>
 		<li><a href="test1.html">Test 1</a></li>
-		<li class="selected"><a href="page3.html">Page 3</a></li>
-		<li><a href="page4.html">Page 4</a></li>
-		<li><a href="page5.html">Page 5</a></li>
+		<li class="selected"><a href="voltage.html">Voltage</a></li>
+		<li><a href="test2.html">Test 2</a></li>
+		<li><a href="current.html">Current</a></li>
 	</ul>
     <!--add links for additional pages once they are created.  Create logical names for pages-->
   </header><!--/.main-header-->
 
-  <div class="main-text">
+    <p class="main-text">
+      The basic equation for Ohm's Law is V=IR, or Voltage = Current * Resistance.<br>
+    </p>
 
-  </div><!--/.main-text-->
+    <div class="calculation" name="voltageForm">
+      <form>
+        Curret (amp):<br>
+        <input type="text" name="voltage" id="current"><br>
+        Resistance:<br>
+        <input type="text" name="current" id="resistance"><br>
+        <input type="submit" value="Calculate" class="submit" onclick="voltage(); return false"><br>
+        <!-- onclick return false keeps the form from submitting and returns the result of the equation to the page without disappearing -->
+      </form>
+    </div>
+
+    <div class="main-text">
+      <span id="returnVoltage"></span>
+    </div>
 
     <footer class="main-footer">
       <div class="footer-inner">
@@ -33,5 +48,6 @@
       </div>
     </footer>
 
+    	<script src="js\resistance.js" type="text/javascript" charset="utf-8"></script>
   </body>
   </html>
