@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/flexbox.css">
+<link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <header class="main-header">
+    <h1 class="name"><a href="index.html">Ohm's Law: I=V/R</a>
+    </h1>
+    <ul class="main-nav">
+      <li><a href="calculator.html">Calculator</a></li>
+  		<li><a href="testR.html">R Test</a></li>
+      <li class="selected"><a href="testV.html">V Test</a></li>
+  		<li><a href="testI.html">I Test</a></li>
+	</ul>
+    <!--add links for additional pages once they are created.  Create logical names for pages-->
+  </header><!--/.main-header-->
+
+        <p class="main-text">
+            In this section, you can test your knowledge of the voltage calculation.<br>
+            Click the "Reveal" buton to reveal the answer.
+        </p>
+
+        <div class="questionBody">
+          <p class="testQuestions">
+            Current = 10a * Resistance = 12&#8486<br>
+             Voltage = <span> <!-- using span to keep it separate from main-text for reveal feature-->
+               120v
+            </span>
+          </p>
+
+          <p class="testQuestions">
+            Current = 12a * Resistance = 10&#8486<br>
+             Voltage = <span> <!-- using span to keep it separate from main-text for reveal feature-->
+               120v
+            </span>
+          </p>
+          </p>
+
+          <p class="testQuestions">
+            Current = 40a * Resistance = 6&#8486<br>
+             Voltage = <span> <!-- using span to keep it separate from main-text for reveal feature-->
+               240v
+            </span>
+          </p>
+          </p>
+          <!-- Using calculation from resistance page, calculation
+          is V=IR-->
+          <!-- Later, add more questions.
+              The jQuery script is set up to handle as many as I need to add-->
+        </div>
+
+
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+      	<script src="js/reveal.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+  <footer class="main-footer">
+    <div class="footer-inner">
+      <span>&copy;2017 RKA
+        <!--design logo for RKA and insert here as link and include in img folder-->
+      </span>
+    </div>
+  </footer>
+
+</body>
+</html>

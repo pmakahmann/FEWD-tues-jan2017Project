@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/flexbox.css">
+<link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <header class="main-header">
+    <h1 class="name"><a href="index.html">Ohm's Law: I=V/R</a>
+    </h1>
+    <ul class="main-nav">
+      <li class="selected"><a href="calculator.html">Calculator</a></li>
+  		<li><a href="testR.html">R Test</a></li>
+      <li><a href="testV.html">V Test</a></li>
+  		<li><a href="testI.html">I Test</a></li>
+	</ul>
+    <!--add links for additional pages once they are created.  Create logical names for pages-->
+  </header><!--/.main-header-->
+
+  <p class="main-text">
+    The basic equation for Ohm's Law is I=V/R, or Current = Voltage / Resistance.<br>
+    From this, you can derive the equation for Resistance as:<br>
+    Resistance = Voltage / Current (or R=V/I)<br>
+    And you can derive the equation for Voltage as:<br>
+    Voltage = Current * Resistance (or V=IR)<br>
+    Input any two variables below (only two) and press the red buton to calculate the third variable.
+  </p>
+
+  <div class="calculation" name="resistanceForm">
+    <form>
+      Voltage:<br>
+      <input type="text" name="voltage" id="voltage"><br>
+      Current (amp):<br>
+      <input type="text" name="current" id="current"><br>
+      Resistance:<br>
+      <input type="text" name="resistance" id="resistance"><br>
+      <input type="submit" value="Resistance(R)" class="submit" onclick="calcResistance(); return false">
+      <input type="submit" value="Voltage(V)" class="submit" onclick="calcVoltage(); return false">
+      <input type="submit" value="Current(I)" class="submit" onclick="calcCurrent(); return false">
+
+      <!-- onclick return false keeps the form from submitting and returns the result of the equation to the page without disappearing -->
+      <!-- Use JavaScript or jQuery to block the third input box once two inputs have a value -->
+      <!-- Move boxes beside the empty input box they would calculate?  Is this needed? -->
+    </form>
+  </div>
+
+  <div class="main-text">
+    <span id="returnCalculation"></span>
+    <p>Refresh the page to begin a new calculation.
+      <!--Create a button to reload page or clear inputs  -->
+  </div>
+
+  <footer class="main-footer">
+    <div class="footer-inner">
+      <span>&copy;2017 RKA
+        <!--design logo for RKA and insert here as link and include in img folder-->
+      </span>
+    </div>
+  </footer>
+
+  	<script src="js\calculator.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

@@ -101,11 +101,11 @@ color, and it looked like a bad 90's website.*/
 }
 
 .main-text,
-.test1questions,
+.testQuestions,
 .calculation {
 	display: block;
 	text-align: center;
-	padding: 20px 20%;
+	padding: 10px 20% 5px;
 }
 
 .questionBody {
@@ -124,6 +124,8 @@ I need to check it out later*/
 	background-color: red;
 	color: white;
 	box-shadow: 0 5px 5px black;
+	width: 129px;
+	height: 40px;
 }
 /* =================================
   Media Queries
@@ -132,6 +134,12 @@ I need to check it out later*/
 @media (min-width: 769px) {
 
 	.main-text {
-		padding-top: 5%;
+		padding-top: 2%;
+	}
+
+	.submit {
+		align-content: center;
+		margin-left: 20px;
+		margin-top: 10px;
 	}
 }

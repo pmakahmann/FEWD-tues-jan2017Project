@@ -10,14 +10,13 @@
 <body>
 
   <header class="main-header">
-    <h1 class="name"><a href="index.html">Motor Control Calculations</a>
+    <h1 class="name"><a href="index.html">Ohm's Law: I=V/R</a>
     </h1>
     <ul class="main-nav">
-		<li><a href="resistance.html">Resistance</a></li>
-		<li class="selected"><a href="test1">Test 1</a></li>
-		<li><a href="page3.html">Page 3</a></li>
-		<li><a href="page4.html">Page 4</a></li>
-		<li><a href="page5.html">Page 5</a></li>
+      <li><a href="calculator.html">Calculator</a></li>
+  		<li class="selected"><a href="testR.html">R Test</a></li>
+      <li><a href="testV.html">V Test</a></li>
+  		<li><a href="testI.html">I Test</a></li>
 	</ul>
     <!--add links for additional pages once they are created.  Create logical names for pages-->
   </header><!--/.main-header-->
@@ -28,24 +27,24 @@
     </p>
 
     <div class="questionBody">
-      <p class="test1questions">
+      <p class="testQuestions">
         Voltage = 120v / Current = 15a<br>
         Resistance = <span> <!-- using span to keep it separate from main-text for reveal feature-->
-           8 ohms
+           8&#8486
         </span>
       </p>
 
-      <p class="test1questions">
+      <p class="testQuestions">
         Voltage = 120v / Current = 20a<br>
         Resistance =<span> <!-- using span to keep it separate from main-text for reveal feature-->
-           6 ohms
+           6&#8486
         </span>
       </p>
 
-      <p class="test1questions">
+      <p class="testQuestions">
         Voltage = 240v / Current = 40a<br>
         Resistance =<span> <!-- using span to keep it separate from main-text for reveal feature-->
-           6 ohms
+           6&#8486
         </span>
       </p>
       <!-- Using calculation from resistance page, calculation
@@ -56,7 +55,7 @@
 
 
     <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
-  	<script src="js/test1.js" type="text/javascript" charset="utf-8"></script>
+  	<script src="js/reveal.js" type="text/javascript" charset="utf-8"></script>
 <!-- added links to jQuery so it will run the reveal feature.
 Also included link to my .js document so it will run properly.
 Not necesary to run this on the .index page since there is no jQeury
