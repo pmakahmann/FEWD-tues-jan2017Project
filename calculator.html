@@ -13,11 +13,10 @@
     <h1 class="name"><a href="index.html">Ohm's Law: I=V/R</a>
     </h1>
     <ul class="main-nav">
-		<li class="selected"><a href="resistance.html">Resistance</a></li>
-		<li><a href="test1.html">Test 1</a></li>
-		<li><a href="voltage.html">Voltage</a></li>
-		<li><a href="test2.html">Test 2</a></li>
-		<li><a href="current.html">Current</a></li>
+      <li class="selected"><a href="calculator.html">Calculator</a></li>
+  		<li><a href="testR.html">R Test</a></li>
+      <li><a href="testV.html">V Test</a></li>
+  		<li><a href="testI.html">I Test</a></li>
 	</ul>
     <!--add links for additional pages once they are created.  Create logical names for pages-->
   </header><!--/.main-header-->
@@ -28,7 +27,7 @@
     Resistance = Voltage / Current (or R=V/I)<br>
     And you can derive the equation for Voltage as:<br>
     Voltage = Current * Resistance (or V=IR)<br>
-    Input any two variables below and press the red buton to calculate the third variable
+    Input any two variables below (only two) and press the red buton to calculate the third variable.
   </p>
 
   <div class="calculation" name="resistanceForm">
@@ -44,11 +43,15 @@
       <input type="submit" value="Current(I)" class="submit" onclick="calcCurrent(); return false">
 
       <!-- onclick return false keeps the form from submitting and returns the result of the equation to the page without disappearing -->
+      <!-- Use JavaScript or jQuery to block the third input box once two inputs have a value -->
+      <!-- Move boxes beside the empty input box they would calculate?  Is this needed? -->
     </form>
   </div>
 
   <div class="main-text">
     <span id="returnCalculation"></span>
+    <p>Refresh the page to begin a new calculation.
+      <!--Create a button to reload page or clear inputs  -->
   </div>
 
   <footer class="main-footer">
@@ -59,6 +62,6 @@
     </div>
   </footer>
 
-  	<script src="js\resistance.js" type="text/javascript" charset="utf-8"></script>
+  	<script src="js\calculator.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
