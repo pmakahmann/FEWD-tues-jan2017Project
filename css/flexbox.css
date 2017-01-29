@@ -30,4 +30,9 @@ body {
     justify-content: space-between;
     /*allows separation between .name and .main-nav*/
   }
+  .main-nav li:nth-of-type(4) {
+    margin-right: 15px;
+  }
+  /*Creates space between last nav item and right edge of viewport.
+  Would need to be altered if more nav list items are created!!*/
 }
