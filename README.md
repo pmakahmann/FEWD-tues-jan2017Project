@@ -1,3 +1,6 @@
+**Attention Code Louisville Reviewer**
+While this project does satisfy all requirements, it was completed during week 2.  My full project is now in the RMC repository.  If you have navigated here first, please go and check out that repository in addition.
+
 # FEWD-tues-jan2017Project
 A website for electrical calculations.
 
